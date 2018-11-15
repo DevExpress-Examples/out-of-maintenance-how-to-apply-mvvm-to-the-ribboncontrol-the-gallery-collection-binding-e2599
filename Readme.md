@@ -1,3 +1,14 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CustomCommand.cs](./CS/Common/CustomCommand.cs) (VB: [CustomCommand.vb](./VB/Common/CustomCommand.vb))
+* [GalleryHelper.cs](./CS/Common/GalleryHelper.cs) (VB: [GalleryHelper.vb](./VB/Common/GalleryHelper.vb))
+* [MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/MainWindow.xaml.vb))
+* [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MainWindow.xaml.vb))
+* [Person.cs](./CS/Model/Person.cs) (VB: [Person.vb](./VB/Model/Person.vb))
+* [PersonCollection.cs](./CS/Model/PersonCollection.cs) (VB: [PersonCollection.vb](./VB/Model/PersonCollection.vb))
+* [MainViewModel.cs](./CS/ViewModel/MainViewModel.cs) (VB: [MainViewModel.vb](./VB/ViewModel/MainViewModel.vb))
+<!-- default file list end -->
 # How to apply MVVM to the RibbonControl (the gallery collection binding)
 
 
