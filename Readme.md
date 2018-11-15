@@ -1,3 +1,14 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [RelayCommand.cs](./CS/TestCommandBindings/Comands/RelayCommand.cs) (VB: [RelayCommand.vb](./VB/TestCommandBindings/Comands/RelayCommand.vb))
+* [MainWindow.xaml](./CS/TestCommandBindings/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/TestCommandBindings/MainWindow.xaml.vb))
+* [MainWindow.xaml.cs](./CS/TestCommandBindings/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/TestCommandBindings/MainWindow.xaml.vb))
+* [Person.cs](./CS/TestCommandBindings/Model/Person.cs) (VB: [Person.vb](./VB/TestCommandBindings/Model/Person.vb))
+* [PersonCollection.cs](./CS/TestCommandBindings/Model/PersonCollection.cs) (VB: [PersonCollection.vb](./VB/TestCommandBindings/Model/PersonCollection.vb))
+* [PersonTemplate.xaml](./CS/TestCommandBindings/PersonTemplate.xaml) (VB: [PersonTemplate.xaml](./VB/TestCommandBindings/PersonTemplate.xaml))
+* [MainViewModel.cs](./CS/TestCommandBindings/ViewModels/MainViewModel.cs) (VB: [MainViewModel.vb](./VB/TestCommandBindings/ViewModels/MainViewModel.vb))
+<!-- default file list end -->
 # How to apply MVVM to the RibbonControl (the gallery collection binding)
 
 
