@@ -6,11 +6,11 @@ Imports DevExpress.Mvvm.UI.Interactivity
 Imports DevExpress.Xpf.Ribbon
 
 Namespace DXSample
-    Partial Public Class MainWindow
-        Inherits DXRibbonWindow
+	Partial Public Class MainWindow
+		Inherits DXRibbonWindow
 
-        Public Sub New()
-            InitializeComponent()
-        End Sub
-    End Class
+		Public Sub New()
+			InitializeComponent()
+		End Sub
+	End Class
 End Namespace

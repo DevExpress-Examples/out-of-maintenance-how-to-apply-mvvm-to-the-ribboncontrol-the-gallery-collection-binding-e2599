@@ -1,8 +1,8 @@
 ﻿Imports System.Windows
 
 Namespace DXSample
-    Partial Public Class App
-        Inherits Application
+	Partial Public Class App
+		Inherits Application
 
-    End Class
+	End Class
 End Namespace
