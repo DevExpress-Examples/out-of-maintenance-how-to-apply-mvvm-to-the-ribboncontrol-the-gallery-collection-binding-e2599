@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 using DevExpress.Xpf.Bars;
-using DevExpress.Xpf.Mvvm.UI.Interactivity;
+using DevExpress.Mvvm.UI.Interactivity;
 
 namespace DXSample {
     public class GalleryHelper : Behavior<Gallery> {

@@ -1,5 +1,5 @@
 ﻿Imports System.Linq
-Imports DevExpress.Xpf.Mvvm
+Imports DevExpress.Mvvm
 Imports DXSample.Model
 
 Namespace DXSample.ViewModel

@@ -1,8 +1,8 @@
 ﻿Imports System
 Imports System.Windows
 Imports DevExpress.Xpf.Bars
-Imports DevExpress.Xpf.Mvvm.UI
-Imports DevExpress.Xpf.Mvvm.UI.Interactivity
+Imports DevExpress.Mvvm.UI
+Imports DevExpress.Mvvm.UI.Interactivity
 Imports DevExpress.Xpf.Ribbon
 
 Namespace DXSample

@@ -1,6 +1,6 @@
 ﻿Imports System.Windows
 Imports DevExpress.Xpf.Bars
-Imports DevExpress.Xpf.Mvvm.UI.Interactivity
+Imports DevExpress.Mvvm.UI.Interactivity
 
 Namespace DXSample
     Public Class GalleryHelper

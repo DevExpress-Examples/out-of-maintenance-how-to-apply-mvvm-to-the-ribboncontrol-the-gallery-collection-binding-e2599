@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using DevExpress.Xpf.Mvvm;
+using DevExpress.Mvvm;
 using DXSample.Model;
 
 namespace DXSample.ViewModel {
