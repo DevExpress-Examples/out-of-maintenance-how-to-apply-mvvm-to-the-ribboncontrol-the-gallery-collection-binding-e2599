@@ -1,48 +1,53 @@
-﻿Imports System.Linq
+Imports System.Linq
 Imports DevExpress.Mvvm
 Imports DXSample.Model
 
 Namespace DXSample.ViewModel
+
     Public Class MainViewModel
         Inherits ViewModelBase
 
+        Private _Items As PersonCollection, _DeleteCommand As DelegateCommand, _CreateCommand As DelegateCommand
+
         Private _SelectedPerson As Person
 
-        Private privateItems As PersonCollection
-        Public Property Items() As PersonCollection
+        Public Property Items As PersonCollection
             Get
-                Return privateItems
+                Return _Items
             End Get
+
             Private Set(ByVal value As PersonCollection)
-                privateItems = value
+                _Items = value
             End Set
         End Property
-        Private privateDeleteCommand As DelegateCommand
-        Public Property DeleteCommand() As DelegateCommand
+
+        Public Property DeleteCommand As DelegateCommand
             Get
-                Return privateDeleteCommand
+                Return _DeleteCommand
             End Get
+
             Private Set(ByVal value As DelegateCommand)
-                privateDeleteCommand = value
+                _DeleteCommand = value
             End Set
         End Property
-        Private privateCreateCommand As DelegateCommand
-        Public Property CreateCommand() As DelegateCommand
+
+        Public Property CreateCommand As DelegateCommand
             Get
-                Return privateCreateCommand
+                Return _CreateCommand
             End Get
+
             Private Set(ByVal value As DelegateCommand)
-                privateCreateCommand = value
+                _CreateCommand = value
             End Set
         End Property
-        Public Property SelectedItem() As Person
+
+        Public Property SelectedItem As Person
             Get
                 Return _SelectedPerson
             End Get
+
             Set(ByVal value As Person)
-                If _SelectedPerson Is value Then
-                    Return
-                End If
+                If _SelectedPerson Is value Then Return
                 _SelectedPerson = value
                 RaisePropertyChanged(Function() SelectedItem)
             End Set
@@ -57,21 +62,22 @@ Namespace DXSample.ViewModel
         Private Sub DeleteCurrentPerson()
             DeletePerson(SelectedItem)
         End Sub
+
         Private Sub DeletePerson(ByVal person As Person)
-            If person Is Nothing Then
-                Return
-            End If
+            If person Is Nothing Then Return
             If Items.Last() Is person Then
                 Items.Remove(person)
                 SelectedItem = Items.LastOrDefault()
                 Return
             End If
+
             Dim index As Integer = Items.IndexOf(person)
             Items.Remove(person)
             SelectedItem = Items(index)
         End Sub
+
         Private Sub CreatePerson()
-            Dim newPerson As New Person()
+            Dim newPerson As Person = New Person()
             Items.Add(newPerson)
             SelectedItem = newPerson
         End Sub
